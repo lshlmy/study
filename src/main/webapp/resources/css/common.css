@@ -1,0 +1,286 @@
+@CHARSET "UTF-8";
+
+/* 设置全局字体 */
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "microsoft yahei", Tahoma, Helvetica, Arial, sans-serif;
+    color: #333;
+    background: #FFF;
+}
+
+input, label, select, option, textarea, button, fieldset, legend {
+    font-family: "microsoft yahei", Tahoma, Helvetica, Arial, sans-serif;
+}
+
+/* 设置margin，padding */
+h1, h2, h3, h4, h5, h6, form, div, p, i, img, ul, li, ol, table, tr, td,
+th, label, button, input {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置标签默认样式 */
+li {
+    list-style: none;
+}
+
+a img {
+    border: none;
+}
+
+a, a:visited, a:link {
+    text-decoration: none;
+    color: #07519A;
+}
+
+a:active, a:hover {
+    text-decoration: underline;
+    color: #07519A;
+}
+
+label, button, a {
+    cursor: pointer;
+}
+
+/* 全局类 */
+.clear {
+    clear: both;
+}
+
+.display-none{
+    display: none !important;
+}
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.required {
+    color: red;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn.active, .btn:active {
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.btn.disabled, .btn[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65
+}
+
+.UEditorContainer {
+    width: 800px;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+.login-input {
+    display: inline-block;
+    word-spacing: 0px;
+    height: 2.3rem;
+    padding: 0;
+    line-height: 2.3rem;
+    text-indent: 2rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    color: #979696;
+    font-family: "microsoft yahei", Arial;
+    transition: border-color .3s ease 0s;
+    width: calc(100% - 2px);
+}
+
+.login-form .input-cont {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login-submit-btn {
+    width: 270px;
+}
+
+.login-form .fa {
+    position: absolute;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    top: 0px;
+    width: 2.4em;
+    height: 100%;
+    text-align: center;
+    line-height: 2.3em;
+    display: inline-block;
+}
+
+.login-input:focus {
+    border: 1px solid #fba64b;
+}
+
+.btn-primary.btn-shadow {
+    -webkit-box-shadow: inset 0 -4px 0 #2a6496;
+    box-shadow: inset 0 -4px 0 #2a6496;
+    border: 0;
+    color: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74
+}
+
+.segment {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+    margin: 1rem 0em;
+    padding: 1em 1em;
+    border-radius: 0.2857rem;
+    border: none;
+}
+
+.login-cont {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-cont .login-header {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.login-cont .login-header .fa:only-child {
+    opacity: 1;
+    font-size: 1.5em;
+    padding-right: 10px;
+    vertical-align: baseline;
+}
+
+.login-form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*----------------------箭头消息提示框-----------------------------*/
+.prompt {
+    background-image: none;
+    padding: 0.6em 0.8em;
+    line-height: 1;
+    margin-top: 1em;
+    position: relative;
+    vertical-align: baseline;
+    text-transform: none;
+    font-weight: bold;
+    border-radius: 0.2857rem;
+    box-sizing: border-box;
+    transition: background 0.2s ease;
+    font-family: "Lato", "Helvetica Neue", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 0.8571rem;
+    display: inline-block;
+}
+
+.prompt:before {
+    position: absolute;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-image: none;
+    z-index: 2;
+    width: 0.6em;
+    height: 0.6em;
+    -webkit-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.prompt.above:before {
+    margin-left: -0.3em;
+    top: -0.3em;
+    left: 50%;
+}
+
+.prompt.red {
+    background-color: #d95c5c !important;
+    border-color: #d95c5c !important;
+    color: #ffffff !important;
+
+}
+
+.prompt.red:before {
+    background-color: #d95c5c !important;
+    border-color: #d95c5c !important;
+    color: #ffffff !important;
+}
+
+.prompt.verificationCode{
+    margin-top: 0;margin-bottom: 1em
+}
+
+/*----------------------结束-----------------------------*/

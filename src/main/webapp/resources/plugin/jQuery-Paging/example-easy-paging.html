@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>jQuery Easy-Paging Test</title>
+    <script src="../../js/jquery-latest.js"></script>
+    <script src="jquery.paging.min.js"></script>
+    <script src="jquery.easy-paging.js"></script>
+    <link href="theme.red.css" rel="stylesheet" type="text/css" />
+</head>
+	
+<body>
+	<p>官方网址：<a href="https://github.com/infusion/jQuery-Paging"></a></p>
+    <div id="pagePanel">
+        <ul id="paging">
+            <li>首页</li>
+            <li>上一页</li>
+            <li>#n</li>
+            <li>#n</li>
+            <li>#c</li>
+            <li>#n</li>
+            <li>#n</li>
+            <li>下一页</li>
+            <li>末页</li>
+        </ul>
+    </div>
+    <div id="output"></div>
+    <script>
+    var test;
+
+    var page = $("#paging").easyPaging(1000, {
+    	pageUrl:"http://www.lshlmy.cn",
+        onSelect: function(page) {
+        	
+        }
+    });
+   /* page.opts.onSelect = function() {
+        //page.setPage(2);
+    }
+
+    function test() {
+        page.setNumber(20);
+        page.setPage(4);
+
+    }*/
+    </script>
+</body>
+
+</html>

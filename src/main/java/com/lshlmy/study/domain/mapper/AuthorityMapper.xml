@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lshlmy.study.domain.mapper.AuthorityMapper">
+
+    <resultMap id="authorityMap" type="com.lshlmy.study.domain.entity.Authority">
+        <id column="id" property="id"/>
+        <result column="authority_alias" property="authorityAlias"/>
+        <result column="authority_name" property="authorityName"/>
+    </resultMap>
+
+    <select id="selectAuthorityByUserId" parameterType="java.lang.Long" resultMap="authorityMap">
+        select t.* from authority t
+        left join users_has_authoritys ua on ua.authority_id = t.id
+        where ua.user_id = #{userId}
+    </select>
+
+    <select id="selectAuthorityByAlias" parameterType="java.lang.Long" resultMap="authorityMap">
+        SELECT t.* FROM authority t
+        WHERE 1 = 1
+        <if test="aliases != null and aliases.size() > 0">
+            and t.AUTHORITY_ALIAS in
+            <foreach collection="aliases" item="alias" index="index"
+                     open="(" close=")" separator=",">
+                #{alias}
+            </foreach>
+        </if>
+    </select>
+
+</mapper>

@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+#pagePanel ul {
+	list-style: none;
+}
+
+#pagePanel ul li {
+	float: left;
+	margin-left: 5px;
+	background-color: #E65E5E;
+	text-align: center;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#pagePanel ul li a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#pagePanel ul li.current {
+	background: #E4A09E;
+	color: #FFF;
+}
+
+#pagePanel ul li:hover, #pagePanel ul li:focus, #pagePanel ul li:active
+	{
+	background-color: #F60;
+}
+
+.pageNumClass {
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
+}
+
+.pageUtilClass {
+	height: 24px;
+	width: 50px;
+	line-height: 24px;
+}
+
+#pagePanel ul li.disabled, #pagePanel ul li.disabled:hover, #pagePanel ul li.disabled:focus,
+	#pagePanel ul li.disabled:active {
+	background-color: #D8D8D8;
+	color: #A8A8A8;
+	cursor: default;
+}
