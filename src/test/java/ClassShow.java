@@ -47,7 +47,7 @@ public class ClassShow {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }*/
-        System.out.println("测试上传至gitHubdasd a");
+        System.out.println("测试上传至gitHubdasd afsdf aaa");
     }
 
     public static class TestPOJO{
